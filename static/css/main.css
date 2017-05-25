@@ -422,10 +422,13 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
+	position: fixed;
+	background: #fff;
+	right: 0;
+	left: 0;
 	border-bottom: 1px solid #eee;
 	clear: both;
 	display: block;
-	margin: 0 auto;
 	padding: 1.6em 2.5%;
 	text-transform: uppercase;
 	width: 100%;
@@ -433,7 +436,6 @@ a:hover, a:active {
 	font-weight: 400;
 	font-size: 12px;
 	letter-spacing: 2.5px;
-	max-width: 1200px;
 }
 .main-navigation > div:first-of-type {
 	float: left;
@@ -750,13 +752,13 @@ a:hover, a:active {
 
 .site-branding {
 	padding: 3.2em 1.6em;
+	min-height: 550px;
 	position: relative;
 	text-align: center;
 	margin-bottom: 0px;
 	margin-bottom: 0px;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	border-bottom: 20px solid #343434;
 }
 .site-title, .site-title a {
 	color: #343434;
