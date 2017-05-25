@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: No Sidebars
+ * Template Name: Home Page template (blog)
  *
  * @package anissa
  */
