@@ -7,9 +7,9 @@ function anissa_scripts() {
 
 	wp_enqueue_style('anissa-fonts', anissa_fonts_url(), array(), null);
 	wp_enqueue_style( 'anissa-fontawesome', get_template_directory_uri() . '/static/fonts/font-awesome.css', array(), '4.3.0' );
-	
-	wp_enqueue_script( 'anissa-navigation', get_template_directory_uri() . '/static/js/navigation.js', array(), '20120206', true );
 
+	wp_enqueue_script( 'anissa-script', get_template_directory_uri() . '/static/js/main.js', ['jquery'], STATIC_VERSION, true );
+	wp_enqueue_script( 'anissa-navigation', get_template_directory_uri() . '/static/js/navigation.js', ['jquery'], '20120206', true );
 	wp_enqueue_script( 'anissa-skip-link-focus-fix', get_template_directory_uri() . '/static/js/skip-link-focus-fix.js', array(), '20130115', true );
 	wp_enqueue_script( 'anissa-isotope', '//unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', ['jquery'], '3.0.4', true );
 	wp_enqueue_script( 'anissa-imagesloaded', '//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js', ['jquery'], '4.1.2', true );
