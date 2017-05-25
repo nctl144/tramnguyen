@@ -5,7 +5,7 @@
  * @package anissa
  */
 
-define('STATIC_VERSION', '00000');
+define('STATIC_VERSION', '00001');
 
 if ( ! function_exists( 'anissa_setup' ) ) :
 /**
@@ -257,6 +257,7 @@ function anissa_comments( $comment, $args, $depth ) {
 
 endif;
 
+require get_template_directory() . '/inc/static.php';
 /**
  * Implement the Custom Header feature.
  */

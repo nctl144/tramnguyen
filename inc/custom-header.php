@@ -16,7 +16,7 @@ function anissa_custom_header_setup() {
 		'default-text-color'     => '495762',
 		'width'                  => 1600,
 		'height'                 => 420,		
-		'default-image'      => get_parent_theme_file_uri( '/img/header.jpg' ),
+		'default-image'      => get_parent_theme_file_uri( '/static/img/header.jpg' ),
 		'flex-height'            => true,
 		'wp-head-callback'       => 'anissa_header_style',
 		'admin-head-callback'    => 'anissa_admin_header_style',
@@ -25,8 +25,8 @@ function anissa_custom_header_setup() {
 	
 	register_default_headers( array(
 		'default-image' => array(
-			'url'           => '%s/img/header.jpg',
-			'thumbnail_url' => '%s/img/header.jpg',
+			'url'           => '%s/static/img/header.jpg',
+			'thumbnail_url' => '%s/static/img/header.jpg',
 			'description'   => __( 'Default Header Image', 'anissa' ),
 		),
 	) );
