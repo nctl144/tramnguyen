@@ -5,6 +5,8 @@
  * @package anissa
  */
 
+define('STATIC_VERSION', '00000');
+
 if ( ! function_exists( 'anissa_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
