@@ -3,6 +3,7 @@
 	var $grid = $('#blog-grid-container').isotope({
 	    itemSelector: '.blog-items',
 		percentPosition: true,
+		layoutMode: 'masonry',
 		masonry: {
 		    columnWidth: '.grid-sizer'
 		}

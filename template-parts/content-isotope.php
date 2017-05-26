@@ -9,5 +9,5 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>"  <?php post_class('blog-items'); ?>>
-	<?php the_post_thumbnail('anissa-home'); ?>
+	<?php the_post_thumbnail('anissa-blog'); ?>
 </div>

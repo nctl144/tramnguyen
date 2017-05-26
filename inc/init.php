@@ -26,7 +26,8 @@ if ( ! function_exists( 'anissa_setup' ) ) :
 		add_theme_support('post-thumbnails');
 		add_image_size('anissa-home', 900, 450, true);
 		add_image_size('anissa-header', 1400, 400, true);
-		add_image_size('anissa-carousel-pic', 480, 320, true); 
+		add_image_size('anissa-carousel-pic', 480, 320, true);
+		add_image_size('anissa-blog', 800, 400, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
