@@ -763,14 +763,16 @@ a:hover, a:active {
 .page-heading {
 	margin-top: 10%;
 }
+.page-heading h1 a, .page-heading h2 {
+    color: #fff;
+    z-index: 10;
+}
 .site-title, .site-title a {
-	color: #343434;
 	line-height: 1;
 	margin-top: 0;
 	text-decoration: none;
 }
 .site-description {
-	color: #495762;
 	margin-bottom: 0;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
@@ -1620,6 +1622,14 @@ div[itemprop="description"] {
 --------------------------------------------------------------*/
 .blog-items, .grid-sizer {
 	width: 25%;
+}
+#blog-grid-container .blog-items {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+#blog-grid-container .blog-items img {
+	height: 100%;
 }
 /*=Media Queries
 ---------------------------------------------------------------------------*/

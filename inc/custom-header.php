@@ -47,11 +47,14 @@ function anissa_header_style() {
 	if ( $header_image ) : ?>
 
 		<style type="text/css" id="custom-header-image">
-			.site-branding:before {
+			.site-branding {
 				background-image: url( <?php echo esc_url( $header_image ); ?>);
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			}
+			.site-branding:before {
+				background: rgba(36, 41, 67, 0.8);
 				content: "";
 				display: block;
 				position: absolute;
@@ -59,7 +62,6 @@ function anissa_header_style() {
 				left: 0;
 				width: 100%;
 				height: 100%;
-				z-index:-1;
 			}
 		</style>
 	<?php
