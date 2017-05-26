@@ -5,7 +5,7 @@
  * @package anissa
  */
 
-define('STATIC_VERSION', '00004');
+define('STATIC_VERSION', '00008');
 
 if ( ! function_exists( 'anissa_setup' ) ) :
 /**

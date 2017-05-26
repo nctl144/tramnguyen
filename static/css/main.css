@@ -154,7 +154,7 @@ body, button, input, select, textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	color: #495762;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Merriweather', serif;
 	line-height: 1.3;
 	font-weight: normal;
 }
@@ -306,6 +306,12 @@ button.menu-toggle, button.menu-toggle:hover, button.menu-toggle:focus {
 	font-weight: 400;
 	font-size: 13px;
 	letter-spacing: 2.5px;
+}
+button#menu-button-open {
+	float: right;
+	border-radius: 100%;
+	padding: 10px 15px;
+	outline: none;
 }
 button, input[type="button"], input[type="reset"], input[type="submit"] {
 	border: 0;
@@ -689,6 +695,10 @@ a:hover, a:active {
 .site-main .comment-navigation a, .site-main .posts-navigation a, .site-main .post-navigation a {
 	color: #495762;
 }
+/* mmenu */
+#menu-mobile {
+	display: none;
+}
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -752,7 +762,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site-branding {
 	padding: 3.2em 1.6em;
-	min-height: 100vh;
+	min-height: 630px;
 	position: relative;
 	text-align: center;
 	margin-bottom: 0px;

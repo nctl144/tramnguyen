@@ -12,4 +12,20 @@
 	    $grid.isotope('layout');
 	});
 
+	var mmenuSelector = $('#menu-mobile').find('nav');
+	mmenuSelector.mmenu({
+		"extensions": [
+            "pagedim-black",
+            "border-offset"
+	    ],
+		offCanvas: {
+			pageSelector: '#page',
+			position: 'right'
+		}
+	});
+	var API = mmenuSelector.data("mmenu");
+	$("#menu-button-open").click(function() {
+        API.open();
+    });
+
 })(jQuery);

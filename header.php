@@ -22,12 +22,22 @@
 
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'anissa' ); ?></a>
-
+	<div id="menu-mobile">
+		<?php
+			wp_nav_menu(array( 
+				'theme_location' => 'primary', 
+				'menu_id' => 'primary-menu',
+				'container' => 'nav' 
+			));
+		?>
+	</div>
 	<header id="masthead" class="site-header" role="banner">
 		<nav id="site-navigation" class="main-navigation clear" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'anissa' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
+			<?php /* ?><button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'anissa' ); ?></button> */?>
+			<?php // wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<button id="menu-button-open" class="menu-slide-button open" type="button">
+			    <i class="fa fa-bars" aria-hidden="true"></i>
+			</button>
 			<?php if ( has_nav_menu( 'social' ) ) : ?>
 				<?php wp_nav_menu( array(
 									'theme_location'  => 'social',

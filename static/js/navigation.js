@@ -22,7 +22,6 @@
 
 	// Hide menu toggle button if both menus are empty and return early.
 	if ( 'undefined' === typeof menu && 'undefined' === typeof socialMenu ) {
-		button.style.display = 'none';
 		return;
 	}
 
