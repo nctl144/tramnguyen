@@ -56,7 +56,7 @@
 				$args = array(
 					'orderby'          => 'date',
 				    'order'            => 'DESC',
-				    'posts_per_page'   => 15,
+				    'posts_per_page'   => 9,
 					'post_type'        => 'post',
 				);
 
