@@ -35,8 +35,10 @@
 		<nav id="site-navigation" class="main-navigation clear" role="navigation">
 			<?php /* ?><button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'anissa' ); ?></button> */?>
 			<?php // wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			<button id="menu-button-open" class="menu-slide-button open" type="button">
-			    <i class="fa fa-bars" aria-hidden="true"></i>
+			<button id="menu-button-open" class="hamburger hamburger--collapse" type="button">
+			   <span class="hamburger-box">
+			      <span class="hamburger-inner"></span>
+			   </span>
 			</button>
 			<?php if ( has_nav_menu( 'social' ) ) : ?>
 				<?php wp_nav_menu( array(

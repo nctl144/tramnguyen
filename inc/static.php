@@ -4,6 +4,7 @@
  */
 function anissa_scripts() {
 	wp_enqueue_style('anissa-style',  get_template_directory_uri() . '/static/css/main.css', false, STATIC_VERSION);
+	wp_enqueue_style('anissa-hamburgers',  get_template_directory_uri() . '/static/css/hamburgers.css', false, '0.8.1');
 	wp_enqueue_style('anissa-mmenucss', '//cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.0.2/jquery.mmenu.all.css', array(), '6.0.2');
 	wp_enqueue_style('anissa-fonts', anissa_fonts_url(), array(), null);
 	wp_enqueue_style('anissa-fontawesome', get_template_directory_uri() . '/static/fonts/font-awesome.css', array(), '4.3.0');

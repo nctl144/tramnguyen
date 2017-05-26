@@ -54,7 +54,7 @@ function anissa_header_style() {
 			    background-size: cover;
 			}
 			.site-branding::before {
-				background: rgba(36, 41, 67, 0.8);
+				background: rgba(36, 41, 67, 0.5);
 				content: "";
 				display: block;
 				position: absolute;

@@ -13,6 +13,8 @@
 	});
 
 	var mmenuSelector = $('#menu-mobile').find('nav');
+	var $icon = $("#menu-button-open");
+
 	mmenuSelector.mmenu({
 		"extensions": [
             "pagedim-black",
@@ -23,9 +25,21 @@
 			position: 'right'
 		}
 	});
+
 	var API = mmenuSelector.data("mmenu");
-	$("#menu-button-open").click(function() {
-        API.open();
-    });
+
+	$icon.on( "click", function() {
+	    API.open();
+	});
+	API.bind( "open:finish", function() {
+	    setTimeout(function() {
+	        $icon.addClass( "is-active" );
+	    }, 100);
+	});
+	API.bind( "close:finish", function() {
+	    setTimeout(function() {
+	        $icon.removeClass( "is-active" );
+	    }, 100);
+	});
 
 })(jQuery);

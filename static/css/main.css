@@ -309,9 +309,14 @@ button.menu-toggle, button.menu-toggle:hover, button.menu-toggle:focus {
 }
 button#menu-button-open {
 	float: right;
-	border-radius: 100%;
 	padding: 10px 15px;
 	outline: none;
+	background: transparent;
+}
+button#menu-button-open .hamburger-inner,
+button#menu-button-open .hamburger-inner::before,
+button#menu-button-open .hamburger-inner::after {
+	background-color: #fff;
 }
 button, input[type="button"], input[type="reset"], input[type="submit"] {
 	border: 0;
@@ -548,7 +553,7 @@ a:hover, a:active {
 }
 .social-links li a:before {
 	content: "\f1e0";
-	color: #9da4aa;
+	color: #fff;
 	font-family: FontAwesome;
 	font-size: 21px;
 	font-weight: normal;
