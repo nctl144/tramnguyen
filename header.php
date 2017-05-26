@@ -35,7 +35,7 @@
 		<nav id="site-navigation" class="main-navigation clear" role="navigation">
 			<?php /* ?><button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'anissa' ); ?></button> */?>
 			<?php // wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			<button id="menu-button-open" class="hamburger hamburger--collapse" type="button">
+			<button id="menu-button-open" class="grid-33 hamburger hamburger--collapse" type="button">
 			   <span class="hamburger-box">
 			      <span class="hamburger-inner"></span>
 			   </span>
@@ -46,7 +46,7 @@
 									'depth'           => 1,
 									'link_before'     => '<span class="screen-reader-text">',
 									'link_after'      => '</span>',
-									'container_class' => 'social-links', ) ); ?>
+									'container_class' => 'social-links grid-66', ) ); ?>
 			<?php endif; ?>
 		</nav><!-- #site-navigation -->
 
