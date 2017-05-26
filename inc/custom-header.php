@@ -48,7 +48,7 @@ function anissa_header_style() {
 
 		<style type="text/css" id="custom-header-image">
 			.site-branding {
-				background-image: url( <?php echo esc_url( $header_image ); ?>);
+				background-image: url( <?php echo esc_url($header_image); ?>);
 			    background-position: center;
 			    background-repeat: no-repeat;
 			    background-size: cover;

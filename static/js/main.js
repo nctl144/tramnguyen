@@ -43,4 +43,8 @@
 	    }, 100);
 	});
 
+	$('.blog-items').hover(function() {
+		$(this).toggleClass('blog-items-hovered');
+	});
+
 })(jQuery);
