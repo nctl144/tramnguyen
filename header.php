@@ -49,30 +49,54 @@
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
-	<div class="wrap clear">
-	<?php if ( is_home()  ) : ?>
-	<div id="slider">
- 
-    <?php
-    $carousel_cat = get_theme_mod('carousel_setting','1');
-    $carousel_count = get_theme_mod('count_setting','4');
-    $new_query = new WP_Query( array( 'cat' => $carousel_cat  , 'showposts' => $carousel_count ));
-    while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
- 
-    <div class="item">
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'anissa-carousel-pic' ); ?></a>
-         <div class="entry-dateslide">
-			<?php the_time( get_option( 'date_format' ) ); ?>
-		</div><!-- .entry-datetop -->
-        <h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
-    </div>
- 
-    <?php 
-        endwhile;
-        wp_reset_postdata(); 
-    ?>
- 
-	</div><!-- #slider -->
+	<?php if (is_front_page()): ?>
+		<div id="blog-grid-container">
+		<div class="grid-sizer"></div>
+			<?php
+				$args = array(
+					'orderby'          => 'date',
+				    'order'            => 'DESC',
+				    'posts_per_page'   => 15,
+					'post_type'        => 'post',
+				);
 
+				$postslist = new WP_Query($args);
+
+				if ($postslist->have_posts()) :
+			        while ($postslist->have_posts()) : 
+			        	$postslist->the_post(); 
+			    		get_template_part( 'template-parts/content', 'isotope' );
+			        endwhile;
+			        wp_reset_postdata();
+			    endif;
+			?>
+		</div>
 	<?php endif; ?>
+
+	<div id="content" class="site-content">
+		<div class="wrap clear">
+			<?php if (is_home()) : ?>
+				<div id="slider">
+			 
+			    <?php
+			    $carousel_cat = get_theme_mod('carousel_setting','1');
+			    $carousel_count = get_theme_mod('count_setting','4');
+			    $new_query = new WP_Query( array( 'cat' => $carousel_cat  , 'showposts' => $carousel_count ));
+			    while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
+			 
+			    <div class="item">
+			        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'anissa-carousel-pic' ); ?></a>
+			         <div class="entry-dateslide">
+						<?php the_time( get_option( 'date_format' ) ); ?>
+					</div><!-- .entry-datetop -->
+			        <h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
+			    </div>
+			 
+			    <?php 
+			        endwhile;
+			        wp_reset_postdata(); 
+			    ?>
+			 
+				</div><!-- #slider -->
+
+			<?php endif; ?>
