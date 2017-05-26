@@ -90,7 +90,7 @@
 	<?php endif; ?>
 
 	<div id="content" class="site-content">
-		<div class="wrap clear">
+		<div class="wrap">
 			<?php if (is_home()) : ?>
 				<div id="slider">
 			 
