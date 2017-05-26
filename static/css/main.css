@@ -313,6 +313,9 @@ button#menu-button-open {
 	outline: none;
 	background: transparent;
 }
+span.hamburger-box {
+	float: right;
+}
 button#menu-button-open .hamburger-inner,
 button#menu-button-open .hamburger-inner::before,
 button#menu-button-open .hamburger-inner::after {

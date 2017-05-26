@@ -32,15 +32,8 @@
 		?>
 	</div>
 	<header id="masthead" class="site-header" role="banner">
-		<nav id="site-navigation" class="main-navigation clear" role="navigation">
-			<?php /* ?><button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'anissa' ); ?></button> */?>
-			<?php // wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			<button id="menu-button-open" class="grid-33 hamburger hamburger--collapse" type="button">
-			   <span class="hamburger-box">
-			      <span class="hamburger-inner"></span>
-			   </span>
-			</button>
-			<?php if ( has_nav_menu( 'social' ) ) : ?>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<?php if (has_nav_menu('social')) : ?>
 				<?php wp_nav_menu( array(
 									'theme_location'  => 'social',
 									'depth'           => 1,
@@ -48,6 +41,17 @@
 									'link_after'      => '</span>',
 									'container_class' => 'social-links grid-66', ) ); ?>
 			<?php endif; ?>
+			<button id="menu-button-open" class="<?php 
+				if (has_nav_menu('social')) {
+					echo "grid-33";
+				} else {
+					echo "grid-100";
+				}; 
+			?> hamburger hamburger--collapse" type="button">
+			   <span class="hamburger-box">
+			      <span class="hamburger-inner"></span>
+			   </span>
+			</button>
 		</nav><!-- #site-navigation -->
 
 		<div class="site-branding"><?php the_custom_logo(); ?>
