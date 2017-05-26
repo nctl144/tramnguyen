@@ -650,7 +650,6 @@ a:hover, a:active {
 .menu-toggle, .main-navigation.toggled ul, .main-navigation.toggled .social-links {
 	display: block;
 	margin: 0 auto;
-	width: 100%;
 }
 .menu-toggle {
 	font-size: 18px;
