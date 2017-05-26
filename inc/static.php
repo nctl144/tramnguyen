@@ -80,5 +80,14 @@ function anissa_fonts_url() {
 	}
 
 	return $fonts_url;
+}
+
+/**
+ * Enqueue Google Fonts for custom headers
+ */
+function anissa_admin_scripts( $hook_suffix ) {
+
+	wp_enqueue_style( 'anissa-fonts', anissa_fonts_url(), array(), null );
 
 }
+add_action( 'admin_print_styles-appearance_page_custom-header', 'anissa_admin_scripts' );
