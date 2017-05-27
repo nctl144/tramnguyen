@@ -9,7 +9,7 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>"  
-     <?php post_class('blog-items'); ?> 
+     class="blog-items" 
 	 style="background-image:url('<?php echo the_post_thumbnail_url() ?>');
 	 		background-size: cover;
 	 		background-position: center;">

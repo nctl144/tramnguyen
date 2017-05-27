@@ -1666,9 +1666,6 @@ div[itemprop="description"] {
     width: 100%;
     z-index: 2;
 }
-.blog-items-hovered::before {
-	background: rgba(36, 41, 67, 0.25) !important;
-}
 #blog-grid-container .blog-items:nth-child(2)::before {
 	background-color: #6fc3df;
 }
@@ -1695,6 +1692,9 @@ div[itemprop="description"] {
 }
 #blog-grid-container .blog-items:nth-child(10)::before {
 	background-color: #542733;
+}
+.blog-items-hovered::before {
+	background: rgba(36, 41, 67, 0.25) !important;
 }
 /*=Media Queries
 ---------------------------------------------------------------------------*/
