@@ -1645,6 +1645,7 @@ div[itemprop="description"] {
 	margin: 0;
 	border: none;
 	min-height: 300px;
+	position: absolute;
 }
 #blog-grid-container .blog-items h2 {
 	z-index: 30;
