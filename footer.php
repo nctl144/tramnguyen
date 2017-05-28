@@ -36,7 +36,7 @@
     </div><!-- .footer-widgets -->
   
     <?php endif; ?>
-    <div class="site-info"> <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'anissa' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'anissa' ), 'WordPress' ); ?></a> <span class="sep"> | </span> <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'anissa' ), 'Anissa', '<a href="https://alienwp.com/" rel="designer">AlienWP</a>' ); ?> </div>
+    <div class="site-info">@2017 Tram Nguyen<span class="sep"> | </span> <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'anissa' ), 'Anissa', '<a href="https://alienwp.com/" rel="designer">AlienWP</a>' ); ?> </div>
   <!-- .site-info --> 
 </footer>
 <!-- #colophon -->
