@@ -32,7 +32,7 @@
 		?>
 	</div>
 	<header id="masthead" class="site-header" role="banner">
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="site-navigation" class="main-navigation Fixed" role="navigation">
 			<?php if (has_nav_menu('social')) : ?>
 				<?php wp_nav_menu( array(
 									'theme_location'  => 'social',

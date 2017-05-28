@@ -20,15 +20,31 @@
 		var $icon = $("#menu-button-open");
 
 		mmenuSelector.mmenu({
-			"extensions": [
-	            "pagedim-black",
-	            "border-offset"
-		    ],
-			offCanvas: {
-				pageSelector: '#page',
-				position: 'right'
-			}
-		});
+			"navbars": [
+            {
+               "position": "bottom",
+               "content": [
+                  "<a class='fa fa-envelope' href='#/'></a>",
+                  "<a class='fa fa-twitter' href='#/'></a>",
+                  "<a class='fa fa-facebook' href='#/'></a>"
+               ]
+            }
+	        ],
+	        extensions: ["theme-dark", "pagedim-black"],
+	        offCanvas: {
+	        	pageSelector: "#page",
+	            "position": "right"
+	        },
+		    navbar: {
+				title: ""
+			},
+	    }, {
+            classNames: {
+            	fixedElements: {
+               		fixed: "nav"
+            	}
+            }
+        });
 
 		var API = mmenuSelector.data("mmenu");
 
