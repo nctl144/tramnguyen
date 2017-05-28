@@ -15,19 +15,19 @@
 <footer id="colophon" class="site-footer wrap" role="contentinfo">
   <?php if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) || is_active_sidebar( 'footer-3' ) ) : ?>
     <div class="footer-widgets">
-        <div class="widget-area grid-33">
+        <div class="widget-area grid-33 tabelt-grid-33 mobile-grid-100">
             <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
             <?php dynamic_sidebar( 'footer-1' ); ?>
             <?php endif; ?>
         </div><!-- .widget-area -->
     
-        <div class="widget-area grid-33">
+        <div class="widget-area grid-33 tabelt-grid-33 mobile-grid-100">
             <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
             <?php dynamic_sidebar( 'footer-2' ); ?>
             <?php endif; ?>
         </div><!-- .widget-area -->
     
-        <div class="widget-area grid-33">
+        <div class="widget-area grid-33 tabelt-grid-33 mobile-grid-100">
             <?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
             <?php dynamic_sidebar( 'footer-3' ); ?>
             <?php endif; ?>
