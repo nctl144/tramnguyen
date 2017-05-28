@@ -438,6 +438,7 @@ a:hover, a:active {
 .main-navigation {
 	position: fixed;
 	background: transparent;
+	top: 0;
 	right: 0;
 	left: 0;
 	clear: both;
@@ -1641,10 +1642,8 @@ div[itemprop="description"] {
 	width: 33.333333%;
 }
 #blog-grid-container .blog-items {
-	padding: 0;
-	margin: 0;
-	border: none;
 	min-height: 300px;
+	position: relative;
 }
 #blog-grid-container .blog-items h2 {
 	z-index: 30;

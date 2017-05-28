@@ -32,7 +32,7 @@
 		?>
 	</div>
 	<header id="masthead" class="site-header" role="banner">
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<div id="site-navigation" class="main-navigation Fixed" role="navigation">
 			<?php if (has_nav_menu('social')) : ?>
 				<?php wp_nav_menu( array(
 									'theme_location'  => 'social',
@@ -52,7 +52,7 @@
 			      <span class="hamburger-inner"></span>
 			   </span>
 			</button>
-		</nav><!-- #site-navigation -->
+		</div><!-- #site-navigation -->
 
 		<div class="site-branding"><?php the_custom_logo(); ?>
 			<?php if ( function_exists( 'jetpack_the_site_logo' ) && has_site_logo() ) : ?>
