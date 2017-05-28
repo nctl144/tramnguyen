@@ -854,6 +854,7 @@ a:hover, a:active {
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
+	color: #fff;
 }
 .sidebar .widget-title {
 	font-family: 'Montserrat', sans-serif;
@@ -1819,7 +1820,6 @@ div[itemprop="description"] {
 		margin-right: 0;
 	}
 	.footer-widgets .widget-area {
-		width: 48%;
 		margin-right: 4%;
 	}
 	.footer-widgets .widget-area:nth-of-type(2n) {
