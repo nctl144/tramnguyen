@@ -1641,6 +1641,9 @@ div[itemprop="description"] {
 .blog-items, .grid-sizer {
 	width: 33.333333%;
 }
+#blog-grid-container {
+	display: none;
+}
 #blog-grid-container .blog-items {
 	min-height: 300px;
 	position: relative;

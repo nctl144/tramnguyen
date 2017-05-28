@@ -1,7 +1,7 @@
 ;(function($) {
 	'use strict'
 	function isotopeBlog() {
-		var $grid = $('#blog-grid-container').isotope({
+		var $grid = $('#blog-grid-container').fadeIn(500).isotope({
 		    itemSelector: '.blog-items',
 			percentPosition: true,
 			layoutMode: 'masonry',
