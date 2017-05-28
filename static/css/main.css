@@ -438,6 +438,7 @@ a:hover, a:active {
 .main-navigation {
 	position: fixed;
 	background: transparent;
+	top: 0;
 	right: 0;
 	left: 0;
 	clear: both;

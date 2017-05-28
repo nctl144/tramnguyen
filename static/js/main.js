@@ -38,13 +38,7 @@
 		    navbar: {
 				title: ""
 			},
-	    }, {
-            classNames: {
-            	fixedElements: {
-               		fixed: "nav"
-            	}
-            }
-        });
+	    });
 
 		var API = mmenuSelector.data("mmenu");
 

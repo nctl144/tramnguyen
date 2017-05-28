@@ -13,7 +13,7 @@ function anissa_scripts() {
 	wp_enqueue_script('anissa-isotope', '//unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', ['jquery'], '3.0.4', true);
 	wp_enqueue_script('anissa-imagesloaded', '//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js', ['jquery'], '4.1.2', true);
 	wp_enqueue_script('anissa-mmenujs', '//cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.0/jquery.mmenu.all.js', ['jquery'], '6.1.0', true);
-	wp_enqueue_script('anissa-fixedmmenu', get_template_directory_uri() . '/static/js/jquery.mmenu.fixedelements.js', ['jquery'], '6.1.0', true);
+	wp_enqueue_script('anissa-fixedmmenu', '//cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.0/addons/fixedelements/jquery.mmenu.fixedelements.js', ['jquery'], '6.1.0', true);
 	wp_enqueue_script('anissa-script', get_template_directory_uri() . '/static/js/main.js', ['jquery'], STATIC_VERSION, true);
 	wp_enqueue_script('anissa-navigation', get_template_directory_uri() . '/static/js/navigation.js', ['jquery'], STATIC_VERSION, true);
 	wp_enqueue_script('anissa-skip-link-focus-fix', get_template_directory_uri() . '/static/js/skip-link-focus-fix.js', array(), '20130115', true);
