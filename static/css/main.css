@@ -864,7 +864,7 @@ a:hover, a:active {
 }
 .site-footer {
 	max-width: 100%;
-	background: rgb(36, 41, 67);
+	background: #32373c;
 }
 .site-footer a, .site-footer > * {
 	color: #fff;
