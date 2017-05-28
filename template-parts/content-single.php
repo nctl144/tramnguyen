@@ -34,7 +34,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer clear">
+	<footer class="entry-footer">
 		<?php anissa_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

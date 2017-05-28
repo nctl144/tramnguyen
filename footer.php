@@ -14,7 +14,7 @@
 <!-- .wrap  -->
 <footer id="colophon" class="site-footer wrap" role="contentinfo">
   <?php if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) || is_active_sidebar( 'footer-3' ) ) : ?>
-  <div class="footer-widgets clear">
+  <div class="footer-widgets">
     <div class="widget-area">
       <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
       <?php dynamic_sidebar( 'footer-1' ); ?>
