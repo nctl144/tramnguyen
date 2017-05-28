@@ -862,6 +862,13 @@ a:hover, a:active {
 	letter-spacing: 2.5px;
 	text-align: center
 }
+.site-footer {
+	max-width: 100%;
+	background: rgb(36, 41, 67);
+}
+.site-footer a, .site-footer > * {
+	color: #fff;
+}
 .site-footer .widget-title {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
@@ -877,17 +884,15 @@ a:hover, a:active {
 .widget ul li {
 	margin-top: .8em;
 	padding-top: .8em;
-	border-top: 1px solid #eee;
 }
 .footer-widgets {
-	border-top: 1px solid #eee;
 	margin: 1.6em 0;
 	padding: 5% 2.5% 0;
+	overflow: hidden;
 }
 .footer-widgets .widget-area {
-	width: 30%;
-	margin-right: 5%;
 	overflow: hidden;
+	padding: 30px 40px;
 	float: left;
 }
 .footer-widgets .widget-area:last-of-type {

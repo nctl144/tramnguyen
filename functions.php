@@ -5,7 +5,7 @@
  * @package anissa
  */
 
-define('STATIC_VERSION', '00027');
+define('STATIC_VERSION', '00029');
 
 require get_template_directory() . '/inc/static.php';
 require get_template_directory() . '/inc/init.php';
