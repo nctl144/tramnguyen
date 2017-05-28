@@ -63,9 +63,11 @@
 		});
 	}
 
-	$(document).ready(function() {
+
+	mmenuActivate();
+
+	$(window).load(function() {
 		isotopeBlog();
-		mmenuActivate();
 		blogGridHover();
 	});
 
