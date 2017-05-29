@@ -24,9 +24,8 @@
             {
                "position": "bottom",
                "content": [
-                  "<a class='fa fa-envelope' href='#/'></a>",
-                  "<a class='fa fa-twitter' href='#/'></a>",
-                  "<a class='fa fa-facebook' href='#/'></a>"
+                  "<a class='fa fa-linkedin' href='http://https://www.linkedin.com/in/ntngoctram/'></a>",
+                  "<a class='fa fa-facebook' href='https://www.facebook.com/tram.bi.luv'></a>"
                ]
             }
 	        ],
